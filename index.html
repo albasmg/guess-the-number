@@ -4,28 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
-    <title>Módulo 2 - Evaluación intermedia</title>
+    <title>Adivina el número</title>
   </head>
   <body>
-    <h1 class="heading">Adivina el número</h1>
-    <p class="paragraph">Introduce aquí tu número:</p>
-    <form>
-      <input
-        type="number"
-        id="numberImput"
-        class="numberInput js-numberInput"
-      />
-      <button class="btn js-button">Prueba</button>
-    </form>
-    <div class="container">
-      <p class="js-clue"></p>
-    </div>
-    <div class="container">
-      <p class="js-attempts"></p>
+    <div class="main-container">
+      <section class="game-container">
+        <h1 class="heading">Adivina el número</h1>
+        <p class="paragraph">Introduce aquí tu número:</p>
+        <form class="form">
+          <input
+            type="number"
+            id="numberImput"
+            class="numberInput js-numberInput"
+          />
+          <button class="btn js-button">Prueba</button>
+        </form>
+        <div class="container">
+          <p class="clue js-clue"></p>
+        </div>
+        <div class="container attempts-container">
+          <p>Número de intentos:</p>
+          <p class="attempts js-attempts"></p>
+        </div>
+      </section>
     </div>
     <script type="text/javascript" src="main.js"></script>
   </body>
